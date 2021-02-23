@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/style.css" media="screen" charset="utf-8">
   </head>
   <body>
+    <a href="#main" id="skip-link">
+      Skip to main navigation
+    </a>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,13 +51,13 @@
           </ol>
         </main>
 
-        <main id="focus">
+        <section id="focus">
           <h2>Focus</h2>
 
           <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus">HTMLElement.focus</a> can be used to set focus on an element.</p>
-        </main>
+        </section>
 
-        <main id="tabindex">
+        <section id="tabindex">
           <h2>Tabindex</h2>
 
           <p>Remember tabindex:</p>
@@ -64,9 +67,9 @@
             <li><b>0</b> in the natural tab order, and it can be focused</li>
             <li><b>1+</b> anti-pattern but can be used to jump to the fron tof the tab order, higher number, higher position</li>
           </ul>
-        </main>
+        </section>
 
-        <main id="tabbable-items">
+        <section id="tabbable-items">
           <h2>Tabbable Items</h2>
 
           <p>There is a list of all focusable selectors on my <a href="https://github.com/jkup/focusable">focusable repo</a>. They are:
@@ -109,10 +112,10 @@ embed,
             <fieldset>
               <legend>Sign Up</legend>
 
-              <input type="text" class="form-control" id="first-name" placeholder="First Name">
-              <input type="text" class="form-control" id="last-name" placeholder="Last Name">
-              <input type="email" class="form-control" id="email" placeholder="Email">
-              <input type="password" class="form-control" id="password" placeholder="Password">
+              <input type="text" class="form-control" id="first-name" placeholder="First Name" />
+              <input type="text" class="form-control" id="last-name" placeholder="Last Name" />
+              <input type="email" class="form-control" id="email" placeholder="Email" />
+              <input type="password" class="form-control" id="password" placeholder="Password" />
               <span>Favorite Color</span>
               <select class="form-control">
                 <option>Red</option>
@@ -121,9 +124,9 @@ embed,
                 <option>Purple</option>
                 <option>Black</option>
               </select>
-              <input type="checkbox"> Remember me
-              <div class="btn btn-default">Cancel</div>
-              <div class="btn btn-primary">Submit</div>
+              <input type="checkbox">Remember me
+              <button class="btn btn-default">Cancel</button>
+              <input type="submit" value="submit" class="btn btn-primary" />
             </fieldset>
           </form>
         </main>
@@ -131,6 +134,5 @@ embed,
     </div>
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/focus.js"></script>
   </body>
 </html>
